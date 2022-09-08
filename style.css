@@ -1,57 +1,43 @@
-.wrapper {
-    max-width: 1280px;
-    border: 1px solid black;
-    margin: 0 auto;
+/* h1, .par1 {
+    color: red;
+}
+
+.par2 {
+    color: green;
+}
+
+.par1 span {
+    font-size: 60px;
+}
+
+.par2 span {
+    color: black;
 }
 
 img {
-    width: 100%;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    border: 5px red solid;
+    padding: 20px;
+    display: block;
 }
 
-header {
+p {
     display: flex;
-    justify-content: space-between;
+    background: red;
 }
+ */
 
-.logo {
-    width: 50px;
-    height: 50px;
-}
-
-section {
+.products {
     display: flex;
-    gap: 10px;
-    justify-content: center;
-}
+    flex-direction: row; 
+    justify-content: center; /* позиціонує по вертикалі для flex-direction: row, позиціонує по горизонталі для flex-direction: column */
+    align-items: center;
+    gap: 20px;
+} 
 
-.square {
-    width: 215px;
-    height: 220px;
-    background-color: black;
-}
+li {
+    /* list-style-type: none; */
+  }
 
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    .logo {
-        order: 0;
-    }
-
-    nav {
-        order: 1;
-    }
-
-    .header-text {
-        order: 2;
-    }
-
-    section {
-        flex-wrap: wrap;
-    }    
-
-    .square {
-        width: 48.5%;
-    }
-}
